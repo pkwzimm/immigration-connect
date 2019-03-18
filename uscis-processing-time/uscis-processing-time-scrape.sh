@@ -5,6 +5,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ubuntu/u
 
 today=`date '+%Y%m%d'`; #define today's date
 
-scrape=$(python3 /home/ubuntu/uscis-processing-time/uscis-processing-time-api.py > /home/ubuntu/uscis-processing-time/uscis-processing-time-api_$today.csv) #define command-line function
+#scrape=$(python3 /home/ubuntu/uscis-processing-time/uscis-processing-time-api.py > /home/ubuntu/uscis-processing-time/uscis-processing-time-api_$today.csv) #define command-line function
+scrape=$(python3 uscis-processing-time-api.py > uscis-processing-time-api_$today.csv) #local version
 
 echo $scrape
